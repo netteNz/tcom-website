@@ -20,7 +20,7 @@ h6 {
 header.masthead {
     position: relative;
     background-color: #343a40;
-    background: url(../img/bg-masthead.jpg) no-repeat center center;
+    background: url('/assets/img/telecommunications-banner-1.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem
@@ -101,24 +101,6 @@ header.masthead h1 {
     box-shadow: 0 5px 5px 0 #adb5bd
 }
 
-.call-to-action {
-    position: relative;
-    background-color: #343a40;
-    background: url(../img/bg-masthead.jpg) no-repeat center center;
-    background-size: cover;
-    padding-top: 7rem;
-    padding-bottom: 7rem
-}
-
-.call-to-action .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: .3
-}
 
 footer.footer {
     padding-top: 4rem;
