@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/models.css" rel="stylesheet">
-
+    <link href="assets/css/landing-page.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,8 +67,7 @@
                             and
                             software programs they create can interoperate, and to facilitate a clear framework that
                             describes the functions of a networking or telecommunication system.
-                            Most vendors involved in telecommunications make an attempt to describe their products and
-                            services in relation to the OSI model. And although it is useful for guiding discussion and
+                            And although it is useful for guiding discussion and
                             evaluation, OSI is rarely actually implemented as-is. That's because few network products or
                             standard tools keep related functions together in well-defined layers, as is the case in the
                             OSI
@@ -81,6 +80,52 @@
                         <figure class="figure1">
                             <img src="/assets/img/osi-model-7-layers-804x1024.png" class="figure img-fluid z-depth-1">
                         </figure>
+
+                        <ul class="list">
+                            <li>1. Physical Layer (Layer 1) :
+                                The lowest layer of the OSI reference model is the physical layer. It is responsible for
+                                the actual physical connection between the devices. The physical layer contains
+                                information in the form of bits. It is responsible for the actual physical connection
+                                between the devices. When receiving data, this layer will get the signal received and
+                                convert it into 0s and 1s and send them to the Data Link layer, which will put the frame
+                                back together.</li>
+
+                            <li>2. Data Link Layer (DLL) (Layer 2) :
+                                The data link layer is responsible for the node to node delivery of the message. The
+                                main function of this layer is to make sure data transfer is error free from one node to
+                                another, over the physical layer. When a packet arrives in a network, it is the
+                                responsibility of DLL to transmit it to the Host using its MAC address.</li>
+
+                            <li>3. Network Layer (Layer 3) :
+                                Network layer works for the transmission of data from one host to the other located in
+                                different networks. It also takes care of packet routing i.e. selection of the shortest
+                                path to transmit the packet, from the number of routes available. The sender &
+                                receiver’s IP address are placed in the header by network layer.</li>
+
+                            <li>4. Transport Layer (Layer 4) :
+                                Transport layer provides services to application layer and takes services from network
+                                layer. The data in the transport layer is referred to as Segments. It is responsible for
+                                the End to End delivery of the complete message. Transport layer also provides the
+                                acknowledgment of the successful data transmission and re-transmits the data if an error
+                                is found.</li>
+
+                            <li>5. Session Layer (Layer 5) :
+                                This layer is responsible for establishment of connection, maintenance of sessions,
+                                authentication and also ensures security.</li>
+
+                            <li>6. Presentation Layer (Layer 6) :
+                                Presentation layer is also called the Translation layer.The data from the application
+                                layer is extracted here and manipulated as per the required format to transmit over the
+                                network.</li>
+
+                            <li>7. Application Layer (Layer 7) :
+                                At the very top of the OSI Reference Model stack of layers, we find Application layer
+                                which is implemented by the network applications. These applications produce the data,
+                                which has to be transferred over the network. This layer also serves as a window for the
+                                application services to access the network and for displaying the received information
+                                to the user.</li>
+
+                        </ul>
                     </article>
 
                     <hr>
@@ -137,10 +182,36 @@
                             TCP/IP is a layered server architecture system in which each layer is defined according to a
                             specific function to perform. All these four layers work collaboratively to transmit the
                             data from one layer to another.</p>
-                        <figure class="figure">
+                        <figure id="figure2">
                             <img src="assets/img/093019_0615_TCPIPModelW2.png" class="figure img-fluid z-depth-1">
                             <img src="/assets/img/093019_0615_TCPIPModelW1.png" class="figure img-fluid z-depth-1">
                         </figure>
+
+                        <ul class="list">
+                            <li>1. Network Access Layer
+                                This layer corresponds to the combination of Data Link Layer and Physical Layer of the
+                                OSI model. It looks out for hardware addressing and the protocols present in this layer
+                                allows for the physical transmission of data.
+                                We just talked about ARP being a protocol of Internet layer, but there is a conflict
+                                about declaring it as a protocol of Internet Layer or Network access layer. It is
+                                described as residing in layer 3, being encapsulated by layer 2 protocols.</li>
+
+                            <li>2. Internet Layer
+                                This layer parallels the functions of OSI’s Network layer. It defines the protocols
+                                which are responsible for logical transmission of data over the entire network.</li>
+
+                            <li>3. Host-to-Host Layer –
+                                This layer is analogous to the transport layer of the OSI model. It is responsible for
+                                end-to-end communication and error-free delivery of data. It shields the upper-layer
+                                applications from the complexities of data.</li>
+
+                            <li>4. Process Layer –
+                                This layer performs the functions of top three layers of the OSI model: Application,
+                                Presentation and Session Layer. It is responsible for node-to-node communication and
+                                controls user-interface specifications. Some of the protocols present in this layer are:
+                                HTTP, HTTPS, FTP, TFTP, Telnet, SSH, SMTP, SNMP, NTP, DNS, DHCP, NFS, X Window, LPD.
+                            </li>
+                        </ul>
 
 
 

@@ -26,6 +26,15 @@ figure.figure1 {
     margin-right: auto;
     width: 75%;
 }
+
+.figure2 {
+    width: 400px;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 footer.footer {
     padding-top: 4rem;
     padding-bottom: 4rem
