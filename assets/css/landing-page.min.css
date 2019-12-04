@@ -36,9 +36,6 @@ header.masthead .overlay {
     opacity: .3
 }
 
-header.masthead h1 {
-    font-size: 2rem
-}
 
 @media (min-width:768px) {
     header.masthead {
@@ -58,12 +55,6 @@ header.masthead h1 {
 .showcase .showcase-img {
     min-height: 30rem;
     background-size: cover
-}
-
-@media (min-width:768px) {
-    .showcase .showcase-text {
-        padding: 7rem
-    }
 }
 
 .features-icons {
@@ -87,22 +78,11 @@ header.masthead h1 {
     font-size: 5rem
 }
 
-.testimonials {
-    padding-top: 7rem;
-    padding-bottom: 7rem
-}
-
-.testimonials .testimonial-item {
-    max-width: 18rem
-}
-
-.testimonials .testimonial-item img {
-    max-width: 12rem;
-    box-shadow: 0 5px 5px 0 #adb5bd
-}
-
 
 footer.footer {
     padding-top: 4rem;
     padding-bottom: 4rem
+}
+card-deck {
+    max-width: 1140px
 }

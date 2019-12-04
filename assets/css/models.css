@@ -14,17 +14,27 @@ h4,
 h5,
 h6 {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-figure {
-    padding-top: 10px;
+figure.figure1 {
+    padding-top: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
 
+.figure2 {
+    width: 400px;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 footer.footer {
     padding-top: 4rem;
     padding-bottom: 4rem
